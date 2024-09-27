@@ -1,0 +1,1 @@
+python preprocess/preprocess_kitti.py --root_dir /home/hb/Documents/KITTI-360/ --save_dir /home/hb/Documents/DNMP-main/data

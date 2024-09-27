@@ -1,0 +1,140 @@
+(pytorch3d) hb@toadhall:~/Documents/DNMP-hb-util$  cd /home/hb/Documents/DNMP-hb ; /usr/bin/env /home/hb/anaconda3/envs/pytorch3d/bin/python /home/hb/.vscode-server/extensions/ms-python.debugpy-2024.6.0-linux-x64/bundled/libs/debugpy/adapter/../../debugpy/launcher 50389 -- /home/hb/Documents/DNMP-hb/test_render.py --dataset dtu --dataroot /home/hb/Desktop/dtu_dataset_samples/dtu --scence_name scan2 --pts_file /home/hb/Documents/DNMP-hb/dtu_data/dtu_pcd.npz --log_dir training_outputs/log/test-dtu-point --num_rays 16384 --chunk_size 16384 --print_freq 100 --val_freq 5000 --N_freqs_xyz 10 --N_freqs_dir 4 --logscale False --scale_factor 1. --max_iter 100000 --num_faces 4 --coarse_num_faces 2 --pretrained_mesh_ae pretrained/mesh_ae/mesh_ae.pth --mesh_ae_hidden_size 8 --near_plane 0.5 --far_plane 100. --scene_scale 10. --use_disp False --voxel_size_list 0.001 0.005 --pretrained_geo_list training_outputs/chpt/geo-dtu-0.001-test/ckpt_10000.pth training_outputs/chpt/geo-dtu-0.005-test/ckpt_10000.pth --use_bkgd True --use_depth True --render_multi_scale True --bin_size 72 --max_faces_per_bin_factor 5 --save_dir ./test5_voxel_size_0.001_0.005-point_add_mesh --pretrained_render training_outputs/chpt/render-dtu-0.001-0.005-test-point/ckpt_5000_entire_model.pth 
+/home/hb/anaconda3/envs/pytorch3d/lib/python3.9/site-packages/scipy/__init__.py:155: UserWarning: A NumPy version >=1.18.5 and <1.25.0 is required for this version of SciPy (detected version 1.26.3
+  warnings.warn(f"A NumPy version >={np_minversion} and <{np_maxversion}"
+Setting up [LPIPS] perceptual loss: trunk [vgg], v[0.1], spatial [off]
+/home/hb/anaconda3/envs/pytorch3d/lib/python3.9/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/hb/anaconda3/envs/pytorch3d/lib/python3.9/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG16_Weights.IMAGENET1K_V1`. You can also use `weights=VGG16_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+Loading model from: /home/hb/anaconda3/envs/pytorch3d/lib/python3.9/site-packages/lpips/weights/v0.1/vgg.pth
+['/home/hb/Documents/DNMP-hb/test_render.py', '--dataset', 'dtu', '--dataroot', '/home/hb/Desktop/dtu_dataset_samples/dtu', '--scence_name', 'scan2', '--pts_file', '/home/hb/Documents/DNMP-hb/dtu_data/dtu_pcd.npz', '--log_dir', 'training_outputs/log/test-dtu-point', '--num_rays', '16384', '--chunk_size', '16384', '--print_freq', '100', '--val_freq', '5000', '--N_freqs_xyz', '10', '--N_freqs_dir', '4', '--logscale', 'False', '--scale_factor', '1.', '--max_iter', '100000', '--num_faces', '4', '--coarse_num_faces', '2', '--pretrained_mesh_ae', 'pretrained/mesh_ae/mesh_ae.pth', '--mesh_ae_hidden_size', '8', '--near_plane', '0.5', '--far_plane', '100.', '--scene_scale', '10.', '--use_disp', 'False', '--voxel_size_list', '0.001', '0.005', '--pretrained_geo_list', 'training_outputs/chpt/geo-dtu-0.001-test/ckpt_10000.pth', 'training_outputs/chpt/geo-dtu-0.005-test/ckpt_10000.pth', '--use_bkgd', 'True', '--use_depth', 'True', '--render_multi_scale', 'True', '--bin_size', '72', '--max_faces_per_bin_factor', '5', '--save_dir', './test5_voxel_size_0.001_0.005-point_add_mesh', '--pretrained_render', 'training_outputs/chpt/render-dtu-0.001-0.005-test-point/ckpt_5000_entire_model.pth']
+0it [00:00, ?it/s]0 14.426449985389858 0.43117865920066833 0.5111945867538452
+1it [00:04,  4.70s/it]1 17.032397664412127 0.485757440328598 0.471039742231369
+2it [00:06,  2.86s/it]2 16.19406919048601 0.4867706000804901 0.4813201427459717
+3it [00:07,  2.27s/it]3 15.698660422428052 0.4758048951625824 0.48724472522735596
+4it [00:09,  1.98s/it]4 16.80897794270452 0.46060648560523987 0.4935765564441681
+5it [00:10,  1.85s/it]5 15.696553304606661 0.46515917778015137 0.5185787677764893
+6it [00:12,  1.75s/it]6 15.62390071047609 0.4959530830383301 0.490598201751709
+7it [00:14,  1.67s/it]7 17.0510894044179 0.5361271500587463 0.4592941403388977
+8it [00:15,  1.62s/it]8 17.836105208865998 0.5614162087440491 0.4320629835128784
+9it [00:17,  1.59s/it]9 17.96486615705334 0.5486343502998352 0.44647878408432007
+10it [00:18,  1.56s/it]10 17.513336176178225 0.5265271067619324 0.46203452348709106
+11it [00:20,  1.54s/it]11 17.244641895875866 0.5273294448852539 0.4731762409210205
+12it [00:21,  1.53s/it]12 17.758190515094977 0.5824228525161743 0.4430766701698303
+13it [00:23,  1.64s/it]13 17.365356449670077 0.6071366667747498 0.42684468626976013
+14it [00:25,  1.62s/it]14 17.659819693717374 0.6129375696182251 0.42603519558906555
+15it [00:26,  1.59s/it]15 16.44328065559068 0.5891066193580627 0.4394056797027588
+16it [00:29,  1.85s/it]16 14.864682862057455 0.5572980046272278 0.45534664392471313
+17it [00:30,  1.76s/it]17 13.830414174955374 0.5223861336708069 0.4945983588695526
+18it [00:32,  1.78s/it]18 12.767515606889429 0.4551331102848053 0.5239245295524597
+19it [00:35,  2.03s/it]19 11.158950145549472 0.3436753451824188 0.5824102163314819
+20it [00:37,  2.17s/it]20 12.527431534215008 0.38798728585243225 0.5528507232666016
+21it [00:40,  2.30s/it]21 14.50242116065928 0.44776222109794617 0.5067620277404785
+22it [00:41,  2.10s/it]22 14.366490834685543 0.47563567757606506 0.4962443709373474
+23it [00:43,  1.95s/it]23 9.48020885952797 0.5290089249610901 0.4451152980327606
+24it [00:44,  1.78s/it]24 11.530954289985225 0.5516250729560852 0.46681827306747437
+25it [00:46,  1.70s/it]25 12.431062215908044 0.5698080062866211 0.46424442529678345
+26it [00:47,  1.63s/it]26 12.1769469129645 0.575333297252655 0.46082764863967896
+27it [00:49,  1.61s/it]27 12.549769053999219 0.5612349510192871 0.44883471727371216
+28it [00:51,  1.75s/it]28 12.342289911584148 0.4322052001953125 0.5287850499153137
+29it [00:52,  1.70s/it]29 12.49191598567756 0.4780271351337433 0.5004193186759949
+30it [00:54,  1.65s/it]30 12.054718547742834 0.4874074459075928 0.508002758026123
+31it [00:56,  1.62s/it]31 11.774497763466165 0.4720526933670044 0.5137218236923218
+32it [00:57,  1.67s/it]32 12.612067260801089 0.46192827820777893 0.5092040300369263
+33it [00:59,  1.62s/it]33 14.63057119999423 0.44239887595176697 0.5057465434074402
+34it [01:01,  1.70s/it]34 14.298895323326308 0.4110361635684967 0.5210407972335815
+35it [01:02,  1.70s/it]35 14.861281445819976 0.40815138816833496 0.5090886354446411
+36it [01:04,  1.64s/it]36 14.052923746016788 0.4085237681865692 0.5235003232955933
+37it [01:05,  1.59s/it]37 13.066549277503617 0.3882131278514862 0.5665971636772156
+38it [01:07,  1.55s/it]38 12.60745748756235 0.3028864562511444 0.5957834720611572
+39it [01:08,  1.53s/it]39 15.2609235209135 0.4140535295009613 0.5513622760772705
+40it [01:10,  1.51s/it]40 16.523277616653502 0.40970101952552795 0.5086550712585449
+41it [01:11,  1.49s/it]41 15.695373939889922 0.41194948554039 0.4809649884700775
+42it [01:13,  1.48s/it]42 15.148500760492116 0.4586207866668701 0.4967465400695801
+43it [01:14,  1.47s/it]43 14.731391869413804 0.49291467666625977 0.4727782905101776
+44it [01:16,  1.47s/it]44 14.603098939533718 0.5315133929252625 0.46994826197624207
+45it [01:17,  1.47s/it]45 12.52241793987045 0.5354609489440918 0.49306851625442505
+46it [01:19,  1.46s/it]46 12.177425285659085 0.5449593663215637 0.5027850866317749
+47it [01:20,  1.46s/it]47 11.913048784872796 0.5504504442214966 0.5074995756149292
+48it [01:21,  1.46s/it]48 11.77189467049173 0.5268771052360535 0.5171286463737488
+49it [01:24,  1.72s/it]
+Avg psnr: 14.400919679707142
+Avg ssim: 0.4885528
+Avg lpips: 0.4927095107886256
+(pytorch3d) hb@toadhall:~/Documents/DNMP-hb$ ^C
+
+(pytorch3d) hb@toadhall:~/Documents/DNMP-hb$  cd /home/hb/Documents/DNMP-hb ; /usr/bin/env /home/hb/anaconda3/envs/pytorch3d/bin/python /home/hb/.vscode-server/extensions/ms-python.debugpy-2024.6.0-linux-x64/bundled/libs/debugpy/adapter/../../debugpy/launcher 38513 -- /home/hb/Documents/DNMP-hb/test_render.py --dataset dtu --dataroot /home/hb/Desktop/dtu_dataset_samples/dtu --scence_name scan2 --pts_file /home/hb/Documents/DNMP-hb/dtu_data/dtu_pcd.npz --log_dir training_outputs/log/test-dtu-point --num_rays 16384 --chunk_size 16384 --print_freq 100 --N_freqs_xyz 10 --N_freqs_dir 4 --logscale False --scale_factor 1. --max_iter 100000 --num_faces 4 --coarse_num_faces 2 --pretrained_mesh_ae pretrained/mesh_ae/mesh_ae.pth --mesh_ae_hidden_size 8 --near_plane 0.5 --far_plane 100. --scene_scale 10. --use_disp False --voxel_size_list 0.001 0.005 --pretrained_geo_list training_outputs/chpt/geo-dtu-0.001-test/ckpt_10000.pth training_outputs/chpt/geo-dtu-0.005-test/ckpt_10000.pth --use_bkgd True --use_depth True --render_multi_scale True --bin_size 72 --max_faces_per_bin_factor 5 --save_dir ./test4_voxel_size_0.001_0.005-point --pretrained_render training_outputs/chpt/render-dtu-0.001-0.005-test-point/ckpt_10000.pth 
+/home/hb/anaconda3/envs/pytorch3d/lib/python3.9/site-packages/scipy/__init__.py:155: UserWarning: A NumPy version >=1.18.5 and <1.25.0 is required for this version of SciPy (detected version 1.26.3
+  warnings.warn(f"A NumPy version >={np_minversion} and <{np_maxversion}"
+Setting up [LPIPS] perceptual loss: trunk [vgg], v[0.1], spatial [off]
+/home/hb/anaconda3/envs/pytorch3d/lib/python3.9/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/hb/anaconda3/envs/pytorch3d/lib/python3.9/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG16_Weights.IMAGENET1K_V1`. You can also use `weights=VGG16_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+Loading model from: /home/hb/anaconda3/envs/pytorch3d/lib/python3.9/site-packages/lpips/weights/v0.1/vgg.pth
+['/home/hb/Documents/DNMP-hb/test_render.py', '--dataset', 'dtu', '--dataroot', '/home/hb/Desktop/dtu_dataset_samples/dtu', '--scence_name', 'scan2', '--pts_file', '/home/hb/Documents/DNMP-hb/dtu_data/dtu_pcd.npz', '--log_dir', 'training_outputs/log/test-dtu-point', '--num_rays', '16384', '--chunk_size', '16384', '--print_freq', '100', '--N_freqs_xyz', '10', '--N_freqs_dir', '4', '--logscale', 'False', '--scale_factor', '1.', '--max_iter', '100000', '--num_faces', '4', '--coarse_num_faces', '2', '--pretrained_mesh_ae', 'pretrained/mesh_ae/mesh_ae.pth', '--mesh_ae_hidden_size', '8', '--near_plane', '0.5', '--far_plane', '100.', '--scene_scale', '10.', '--use_disp', 'False', '--voxel_size_list', '0.001', '0.005', '--pretrained_geo_list', 'training_outputs/chpt/geo-dtu-0.001-test/ckpt_10000.pth', 'training_outputs/chpt/geo-dtu-0.005-test/ckpt_10000.pth', '--use_bkgd', 'True', '--use_depth', 'True', '--render_multi_scale', 'True', '--bin_size', '72', '--max_faces_per_bin_factor', '5', '--save_dir', './test4_voxel_size_0.001_0.005-point', '--pretrained_render', 'training_outputs/chpt/render-dtu-0.001-0.005-test-point/ckpt_10000.pth']
+(pytorch3d) hb@toadhall:~/Documents/DNMP-hb$ ^C
+
+(pytorch3d) hb@toadhall:~/Documents/DNMP-hb$  cd /home/hb/Documents/DNMP-hb ; /usr/bin/env /home/hb/anaconda3/envs/pytorch3d/bin/python /home/hb/.vscode-server/extensions/ms-python.debugpy-2024.6.0-linux-x64/bundled/libs/debugpy/adapter/../../debugpy/launcher 38905 -- /home/hb/Documents/DNMP-hb/test_render.py --dataset dtu --dataroot /home/hb/Desktop/dtu_dataset_samples/dtu --scence_name scan2 --pts_file /home/hb/Documents/DNMP-hb/dtu_data/dtu_pcd.npz --log_dir training_outputs/log/test-dtu-point --num_rays 16384 --chunk_size 16384 --print_freq 100 --N_freqs_xyz 10 --N_freqs_dir 4 --logscale False --scale_factor 1. --max_iter 100000 --num_faces 4 --coarse_num_faces 2 --pretrained_mesh_ae pretrained/mesh_ae/mesh_ae.pth --mesh_ae_hidden_size 8 --near_plane 0.5 --far_plane 100. --scene_scale 10. --use_disp False --voxel_size_list 0.001 0.005 --pretrained_geo_list training_outputs/chpt/geo-dtu-0.001-test/ckpt_10000.pth training_outputs/chpt/geo-dtu-0.005-test/ckpt_10000.pth --use_bkgd True --use_depth True --render_multi_scale True --bin_size 72 --max_faces_per_bin_factor 5 --save_dir ./test4_voxel_size_0.001_0.005-point --pretrained_render training_outputs/chpt/render-dtu-0.001-0.005-test-point/ckpt_10000.pth 
+/home/hb/anaconda3/envs/pytorch3d/lib/python3.9/site-packages/scipy/__init__.py:155: UserWarning: A NumPy version >=1.18.5 and <1.25.0 is required for this version of SciPy (detected version 1.26.3
+  warnings.warn(f"A NumPy version >={np_minversion} and <{np_maxversion}"
+Setting up [LPIPS] perceptual loss: trunk [vgg], v[0.1], spatial [off]
+/home/hb/anaconda3/envs/pytorch3d/lib/python3.9/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/hb/anaconda3/envs/pytorch3d/lib/python3.9/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=VGG16_Weights.IMAGENET1K_V1`. You can also use `weights=VGG16_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+Loading model from: /home/hb/anaconda3/envs/pytorch3d/lib/python3.9/site-packages/lpips/weights/v0.1/vgg.pth
+['/home/hb/Documents/DNMP-hb/test_render.py', '--dataset', 'dtu', '--dataroot', '/home/hb/Desktop/dtu_dataset_samples/dtu', '--scence_name', 'scan2', '--pts_file', '/home/hb/Documents/DNMP-hb/dtu_data/dtu_pcd.npz', '--log_dir', 'training_outputs/log/test-dtu-point', '--num_rays', '16384', '--chunk_size', '16384', '--print_freq', '100', '--N_freqs_xyz', '10', '--N_freqs_dir', '4', '--logscale', 'False', '--scale_factor', '1.', '--max_iter', '100000', '--num_faces', '4', '--coarse_num_faces', '2', '--pretrained_mesh_ae', 'pretrained/mesh_ae/mesh_ae.pth', '--mesh_ae_hidden_size', '8', '--near_plane', '0.5', '--far_plane', '100.', '--scene_scale', '10.', '--use_disp', 'False', '--voxel_size_list', '0.001', '0.005', '--pretrained_geo_list', 'training_outputs/chpt/geo-dtu-0.001-test/ckpt_10000.pth', 'training_outputs/chpt/geo-dtu-0.005-test/ckpt_10000.pth', '--use_bkgd', 'True', '--use_depth', 'True', '--render_multi_scale', 'True', '--bin_size', '72', '--max_faces_per_bin_factor', '5', '--save_dir', './test4_voxel_size_0.001_0.005-point', '--pretrained_render', 'training_outputs/chpt/render-dtu-0.001-0.005-test-point/ckpt_10000.pth']
+0it [00:00, ?it/s]0 12.72202878335444 0.501162052154541 0.49203425645828247
+1it [00:03,  3.59s/it]1 16.92377910589531 0.5280462503433228 0.47520726919174194
+2it [00:06,  3.23s/it]2 16.25158367034202 0.5299109816551208 0.48321765661239624
+3it [00:09,  3.05s/it]3 15.757608984929087 0.5012127757072449 0.4957755208015442
+4it [00:12,  3.01s/it]4 16.614329957067177 0.4761139154434204 0.5009666085243225
+5it [00:15,  2.97s/it]5 16.45488171115376 0.48769235610961914 0.5238481163978577
+6it [00:18,  3.00s/it]6 16.246070994528218 0.5148470401763916 0.4997226595878601
+7it [00:21,  2.96s/it]7 17.17012965378106 0.5615503191947937 0.4650087356567383
+8it [00:24,  2.94s/it]8 17.439120069561017 0.596716582775116 0.4361170530319214
+9it [00:26,  2.92s/it]9 17.896489924889522 0.5919750332832336 0.4385056793689728
+10it [00:29,  2.88s/it]10 15.753065479769253 0.5798660516738892 0.4461131989955902
+11it [00:32,  2.87s/it]11 15.431059565427605 0.6058855652809143 0.42920833826065063
+12it [00:35,  2.80s/it]12 16.20037604780792 0.6496393084526062 0.40334105491638184
+13it [00:37,  2.77s/it]13 16.492275545552634 0.6712711453437805 0.38119369745254517
+14it [00:40,  2.74s/it]14 17.555917558628778 0.6740162968635559 0.370174765586853
+15it [00:43,  2.73s/it]15 17.187956802444887 0.6486565470695496 0.39315366744995117
+16it [00:46,  2.73s/it]16 14.508518859357153 0.5970519185066223 0.43429258465766907
+17it [00:48,  2.74s/it]17 12.445682610816172 0.5560660362243652 0.4703912138938904
+18it [00:51,  2.75s/it]18 10.74094249365103 0.4797084331512451 0.5093969702720642
+19it [00:54,  2.74s/it]19 6.492151671756502 0.34790265560150146 0.5669302940368652
+20it [00:56,  2.72s/it]20 6.8676172878762385 0.4128481447696686 0.5341291427612305
+21it [00:59,  2.71s/it]21 7.596252417880817 0.48918113112449646 0.48658615350723267
+22it [01:02,  2.74s/it]22 8.443109800649587 0.5339720845222473 0.46262919902801514
+23it [01:05,  2.74s/it]23 9.406328235060213 0.5740002393722534 0.44085004925727844
+24it [01:07,  2.72s/it]24 10.801462852148562 0.6354075074195862 0.4036650061607361
+25it [01:10,  2.70s/it]25 11.641363122071176 0.6588013172149658 0.3958912789821625
+26it [01:13,  2.68s/it]26 11.425905924219341 0.6586361527442932 0.39549389481544495
+27it [01:15,  2.66s/it]27 12.029541854953093 0.6390319466590881 0.40399807691574097
+28it [01:18,  2.65s/it]28 6.970987725175505 0.5071814656257629 0.467477023601532
+29it [01:21,  2.65s/it]29 6.7309492118053305 0.5340312123298645 0.4538324475288391
+30it [01:23,  2.65s/it]30 6.639822319802888 0.5472939610481262 0.4478018581867218
+31it [01:26,  2.64s/it]31 6.617102205406883 0.542613685131073 0.4430985152721405
+32it [01:28,  2.63s/it]32 6.508979622043109 0.5248128771781921 0.4472891092300415
+33it [01:31,  2.63s/it]33 6.287862716077404 0.4897735118865967 0.46532922983169556
+34it [01:34,  2.63s/it]34 6.097198063245414 0.4580692946910858 0.48679298162460327
+35it [01:36,  2.64s/it]35 5.7968240171915255 0.4281175136566162 0.49443042278289795
+36it [01:39,  2.65s/it]36 5.430764326521182 0.39417192339897156 0.5259780287742615
+37it [01:42,  2.68s/it]37 5.012826049017841 0.3355223834514618 0.5716460347175598
+38it [01:44,  2.67s/it]38 3.691963452238274 0.2027909904718399 0.6285028457641602
+39it [01:47,  2.64s/it]39 4.056343920143585 0.30375906825065613 0.5857281684875488
+40it [01:50,  2.62s/it]40 4.213581504362327 0.33794844150543213 0.5439221858978271
+41it [01:52,  2.62s/it]41 4.392594623993011 0.3564740717411041 0.5175365209579468
+42it [01:55,  2.62s/it]42 4.56866994507886 0.37764081358909607 0.5227863192558289
+43it [01:57,  2.63s/it]43 4.673016801103223 0.3984772861003876 0.5026240348815918
+44it [02:00,  2.62s/it]44 4.76523090377518 0.41937437653541565 0.49947255849838257
+45it [02:03,  2.64s/it]45 4.823296754756443 0.43598461151123047 0.4979814887046814
+46it [02:05,  2.63s/it]46 4.84966471980835 0.4437274932861328 0.49528729915618896
+47it [02:08,  2.66s/it]47 4.874287452876004 0.4389609098434448 0.505743145942688
+48it [02:11,  2.67s/it]48 4.864572448964849 0.42051947116851807 0.5157548189163208
+49it [02:14,  2.75s/it]
+Avg psnr: 10.129838566713465
+Avg ssim: 0.5020085
+Avg lpips: 0.47667055470602854

@@ -1,0 +1,3 @@
+1. visualize camera pose
+2. visualize voxel grid
+3. visualize camera ray
