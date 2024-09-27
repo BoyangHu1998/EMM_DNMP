@@ -1,4 +1,4 @@
-  # [ICCV 2023] Urban Radiance Field Representation with Deformable Neural Mesh Primitives
+  # Enhanced Mesh Method (EMM) for Deformable Neural Mesh Primitives (DNMP): Improving Rendering Accuracy in Sparse Data Environments
 
 
 <!-- [![arXiv](https://img.shields.io/badge/arXiv-2307.10173-b31b1b.svg)](https://arxiv.org/abs/2307.10776) <a href="https://dnmp.github.io/">
